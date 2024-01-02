@@ -13,12 +13,12 @@ export default async (req: Request, context: Context) => {
             `<li>Hello at ${formatter.format(new Date())}</li>\n\n`
           )
         )
-        if (i++ >= 5) {
+        if (i++ >= 26) {
           controller.enqueue(encoder.encode("</ol></body></html>"))
           controller.close()
           clearInterval(timer)
         }
-      }, 1000)
+      }, 50)
     }
   })
 
