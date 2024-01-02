@@ -18,7 +18,7 @@ export default async (req: Request, context: Context) => {
           controller.close()
           clearInterval(timer)
         }
-      }, 50)
+      }, 1000)
     }
   })
 
