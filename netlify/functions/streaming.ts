@@ -13,7 +13,7 @@ export default async (req: Request, context: Context) => {
             `<li>Hello at ${formatter.format(new Date())}</li>\n\n`
           )
         )
-        if (i++ >= 280) {
+        if (i++ >= 250) {
           controller.enqueue(encoder.encode("</ol></body></html>"))
           controller.close()
           clearInterval(timer)
