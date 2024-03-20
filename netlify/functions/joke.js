@@ -1,4 +1,4 @@
-// Jokes provided from the lovely folks at https://icanhazdadjoke.com
+// Jokes provided from the lovely folks at https://icanhazdadjoke.com 1
 import jokes from './jokes.json';
 
 export const handler = async (event) => {
